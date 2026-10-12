@@ -9,9 +9,7 @@ const httpServer = createServer(app);
 
 const PORT = Number(process.env.PORT) || 3001;
 
-const allowedOrigins = (
-  process.env.CLIENT_URL || "http://localhost:3000"
-)
+const allowedOrigins = process.env.CLIENT_URL
   .split(",")
   .map((origin) => origin.trim())
   .filter(Boolean);

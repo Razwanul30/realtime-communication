@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState } from "react";
 import { io, Socket } from "socket.io-client";
 
-const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:3001";
+const SERVER_URL = process.env.NEXT_PUBLIC_SIGNALING_URL || "http://localhost:3001";
 
 export default function Home() {
   const localVideo = useRef<HTMLVideoElement>(null);
